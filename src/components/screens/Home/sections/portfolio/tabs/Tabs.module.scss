@@ -1,0 +1,43 @@
+@import "../../../../../../assets/styles/vars.scss";
+
+.tabs {
+  color: $title;
+}
+
+.top {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  justify-content: flex-end;
+  span {
+    padding: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+    &.active {
+      text-decoration-line: underline;
+      color: #009846;
+    }
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@media (max-width: 1070px) {
+  .content {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 340px));
+  }
+}
+
+@media (max-width: 550px) {
+  .top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+}

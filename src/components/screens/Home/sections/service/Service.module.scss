@@ -1,0 +1,25 @@
+.root {
+  padding: 80px 0;
+  background-image: url("./service.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+}
+.wrap {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.right {
+  max-width: 510px;
+}
+
+@media (max-width: 950px) {
+  .wrap {
+    flex-direction: column-reverse;
+  }
+  .root {
+    background-size: cover;
+    background-position: top center;
+  }
+}

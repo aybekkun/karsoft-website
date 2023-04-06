@@ -1,0 +1,64 @@
+@import "../../../../assets/styles/vars.scss";
+.root {
+  background-color: #fff;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 30px;
+}
+.leftLink {
+  display: flex;
+  align-items: center;
+  color: $text;
+  margin-bottom: 18px;
+  svg {
+    margin-right: 10px;
+    path {
+      fill: $text;
+    }
+  }
+}
+.bottom {
+  background-color: $subtitle;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 20px 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.top {
+  padding-top: 160px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.center {
+  a {
+    display: block;
+    color: $text;
+    margin-bottom: 20px;
+  }
+}
+.right {
+  p {
+    color: $text;
+    margin-bottom: 20px;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+
